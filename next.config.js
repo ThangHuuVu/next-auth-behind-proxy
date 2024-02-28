@@ -5,7 +5,7 @@ module.exports = {
   basePath: "/authjs",
   experimental: {
     serverActions: {
-      allowedOrigins: ["https://authjs-with-proxy-example.netlify.app"],
+      allowedOrigins: ["authjs-with-proxy-example.netlify.app"],
     },
   },
 };
