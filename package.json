@@ -45,7 +45,8 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "next-auth@5.0.0-beta.13": "patches/next-auth@5.0.0-beta.13.patch"
+      "next-auth@5.0.0-beta.13": "patches/next-auth@5.0.0-beta.13.patch",
+      "@auth/core@0.27.0": "patches/@auth__core@0.27.0.patch"
     }
   }
 }
