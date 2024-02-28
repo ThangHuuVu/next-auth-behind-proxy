@@ -144,6 +144,5 @@ export const config = {
 } satisfies NextAuthConfig;
 
 export const { handlers, auth, signIn, signOut } = NextAuth((req) => {
-  if (req) req.headers.set("x-forwarded-host", process.env.AUTH_URL as string);
   return config;
 });
