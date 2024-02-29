@@ -141,7 +141,6 @@ export const config = {
     },
   },
   trustHost: true,
-  basePath: "/authjs/api/auth",
 } satisfies NextAuthConfig;
 
 export const { handlers, auth, signIn, signOut } = NextAuth(config);
