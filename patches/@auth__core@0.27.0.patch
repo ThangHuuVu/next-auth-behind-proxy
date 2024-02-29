@@ -1,8 +1,8 @@
 diff --git a/lib/utils/web.js b/lib/utils/web.js
-index 08dd8bd7e4540de69f97a7acf1eebdbe6b1a9d22..a80464a52ba42ffe19c7bae6454c2506ea9b6c72 100644
+index 08dd8bd7e4540de69f97a7acf1eebdbe6b1a9d22..58b9c5069cab68355baee244ff0cff7323d23cfb 100644
 --- a/lib/utils/web.js
 +++ b/lib/utils/web.js
-@@ -2,100 +2,114 @@ import { parse as parseCookie, serialize } from "cookie";
+@@ -2,100 +2,115 @@ import { parse as parseCookie, serialize } from "cookie";
  import { UnknownAction } from "../../errors.js";
  import { isAuthAction } from "./actions.js";
  async function getBody(req) {
@@ -54,6 +54,7 @@ index 08dd8bd7e4540de69f97a7acf1eebdbe6b1a9d22..a80464a52ba42ffe19c7bae6454c2506
 +    // Defaults are usually set in the `init` function, but this is needed below
 +    config.basePath ?? (config.basePath = "/auth");
 +    const url = new URL(req.url);
++    console.log({ url: url.toString(), config: config.basePath });
 +    const { action, providerId } = parseActionAndProviderId(
 +      url.pathname,
 +      config.basePath

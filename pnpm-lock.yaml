@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@auth/core@0.27.0':
-    hash: g4fvegsqk6rg4juckqhvju3ngq
+    hash: e2t6uqnbum6mu4anlrjimtwgp4
     path: patches/@auth__core@0.27.0.patch
   next-auth@5.0.0-beta.13:
     hash: facmcvnoliqsoygt6xtd7lghci
@@ -85,7 +85,7 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  /@auth/core@0.27.0(patch_hash=g4fvegsqk6rg4juckqhvju3ngq):
+  /@auth/core@0.27.0(patch_hash=e2t6uqnbum6mu4anlrjimtwgp4):
     resolution: {integrity: sha512-3bydnRJIM/Al6mkYmb53MsC+6G8ojw3lLPzwgVnX4dCo6N2lrib6Wq6r0vxZIhuHGjLObqqtUfpeaEj5aeTHFg==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
@@ -1323,7 +1323,7 @@ packages:
       nodemailer:
         optional: true
     dependencies:
-      '@auth/core': 0.27.0(patch_hash=g4fvegsqk6rg4juckqhvju3ngq)
+      '@auth/core': 0.27.0(patch_hash=e2t6uqnbum6mu4anlrjimtwgp4)
       next: 14.1.1-canary.71(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
     dev: false
