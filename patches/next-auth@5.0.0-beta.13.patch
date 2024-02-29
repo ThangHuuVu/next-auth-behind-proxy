@@ -1,8 +1,8 @@
 diff --git a/lib/actions.js b/lib/actions.js
-index f4c44d79f4251744f0e99fb382515c4a668ddf2e..b9015d0cda0c7b9db5d8ab53336be6183772dd55 100644
+index f4c44d79f4251744f0e99fb382515c4a668ddf2e..c6fc0c8da3afdc2e226f159f95d961a09a3b7a51 100644
 --- a/lib/actions.js
 +++ b/lib/actions.js
-@@ -1,89 +1,102 @@
+@@ -1,89 +1,107 @@
  import { Auth, raw, skipCSRFCheck } from "@auth/core";
  import { headers as nextHeaders, cookies } from "next/headers";
  import { redirect } from "next/navigation";
@@ -30,6 +30,11 @@ index f4c44d79f4251744f0e99fb382515c4a668ddf2e..b9015d0cda0c7b9db5d8ab53336be618
 +  } = options instanceof FormData ? Object.fromEntries(options) : options;
 +  const callbackUrl = redirectTo?.toString() ?? headers.get("Referer") ?? "/";
 +  const signInURL = createActionURL("signin", headers, config.basePath);
++  console.log({
++    signInURL,
++    basePath: config.basePath,
++    env: process.env.AUTH_URL,
++  });
 +  if (!provider) {
 +    signInURL.searchParams.append("callbackUrl", callbackUrl);
 +    if (shouldRedirect) redirect(signInURL.toString());

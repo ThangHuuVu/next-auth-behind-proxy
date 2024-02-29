@@ -9,7 +9,7 @@ patchedDependencies:
     hash: e2t6uqnbum6mu4anlrjimtwgp4
     path: patches/@auth__core@0.27.0.patch
   next-auth@5.0.0-beta.13:
-    hash: facmcvnoliqsoygt6xtd7lghci
+    hash: fwu47lggc4w3emcgkdu2rlmmzy
     path: patches/next-auth@5.0.0-beta.13.patch
 
 dependencies:
@@ -42,7 +42,7 @@ dependencies:
     version: 14.1.1-canary.71(react-dom@18.2.0)(react@18.2.0)
   next-auth:
     specifier: beta
-    version: 5.0.0-beta.13(patch_hash=facmcvnoliqsoygt6xtd7lghci)(next@14.1.1-canary.71)(react@18.2.0)
+    version: 5.0.0-beta.13(patch_hash=fwu47lggc4w3emcgkdu2rlmmzy)(next@14.1.1-canary.71)(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1307,7 +1307,7 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  /next-auth@5.0.0-beta.13(patch_hash=facmcvnoliqsoygt6xtd7lghci)(next@14.1.1-canary.71)(react@18.2.0):
+  /next-auth@5.0.0-beta.13(patch_hash=fwu47lggc4w3emcgkdu2rlmmzy)(next@14.1.1-canary.71)(react@18.2.0):
     resolution: {integrity: sha512-2m2Gq69WQ0YXcHCCpHn2y5z1bxSlqD/XOuAgrdtz49/VIAdTFFeYZz97RYqf6xMF8VGmoG32VUnJ6LzaHk6Fwg==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
