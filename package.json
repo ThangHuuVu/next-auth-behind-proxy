@@ -42,11 +42,5 @@
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "next-auth@5.0.0-beta.13": "patches/next-auth@5.0.0-beta.13.patch",
-      "@auth/core@0.27.0": "patches/@auth__core@0.27.0.patch"
-    }
   }
 }

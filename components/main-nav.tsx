@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Image from "next/image"
+import Image from "next/image";
 
-import { cn } from "@/lib/utils"
-import CustomLink from "./custom-link"
+import { cn } from "@/lib/utils";
+import CustomLink from "./custom-link";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,9 +12,9 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "./ui/navigation-menu"
-import React from "react"
-import { Button } from "./ui/button"
+} from "./ui/navigation-menu";
+import React from "react";
+import { Button } from "./ui/button";
 
 export function MainNav() {
   return (
@@ -30,13 +30,19 @@ export function MainNav() {
             <NavigationMenuTrigger>Server Side</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                <ListItem href="/server-example" title="RSC Example">
+                <ListItem href="/authjs/server-example" title="RSC Example">
                   Protecting React Server Component.
                 </ListItem>
-                <ListItem href="/middleware-example" title="Middleware Example">
+                <ListItem
+                  href="/authjs/middleware-example"
+                  title="Middleware Example"
+                >
                   Using Middleware to protect pages & APIs.
                 </ListItem>
-                <ListItem href="/api-example" title="Route Handler Example">
+                <ListItem
+                  href="/authjs/api-example"
+                  title="Route Handler Example"
+                >
                   Getting the session inside an API Route.
                 </ListItem>
               </ul>
@@ -44,7 +50,7 @@ export function MainNav() {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink
-              href="/client-example"
+              href="/authjs/client-example"
               className={navigationMenuTriggerStyle()}
             >
               Client Side
@@ -53,7 +59,7 @@ export function MainNav() {
         </NavigationMenuList>
       </NavigationMenu>
     </div>
-  )
+  );
 }
 
 const ListItem = React.forwardRef<
@@ -78,6 +84,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";
