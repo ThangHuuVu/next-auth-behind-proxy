@@ -20,4 +20,6 @@ export const IndexClient = () => {
       router.replace(`${pathname}${query}`);
     }
   }, [searchParams, pathname, router]);
+
+  return null;
 };
