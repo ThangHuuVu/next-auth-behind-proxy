@@ -1,5 +1,5 @@
-import CustomLink from "@/components/custom-link"
-import packageJSON from "../package.json"
+import CustomLink from "@/components/custom-link";
+import packageJSON from "../package.json";
 
 export default function Index() {
   return (
@@ -8,15 +8,7 @@ export default function Index() {
       <p>
         This is an example site to demonstrate how to use{" "}
         <CustomLink href="https://nextjs.authjs.dev">NextAuth.js</CustomLink>{" "}
-        for authentication. Check out the{" "}
-        <CustomLink href="/server-example" className="underline">
-          Server
-        </CustomLink>{" "}
-        and the{" "}
-        <CustomLink href="/client-example" className="underline">
-          Client
-        </CustomLink>{" "}
-        examples to see how to secure pages and get session data.
+        for authentication. This example is deployed behind a Netlify proxy.
       </p>
       <p>
         Current{" "}
@@ -24,5 +16,5 @@ export default function Index() {
         version: <em>next-auth@{packageJSON.dependencies["next-auth"]}</em>
       </p>
     </div>
-  )
+  );
 }
