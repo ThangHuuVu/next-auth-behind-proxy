@@ -1,5 +1,6 @@
 import CustomLink from "@/components/custom-link";
 import packageJSON from "../package.json";
+import { IndexClient } from "@/components/index-client";
 
 export default function Index() {
   return (
@@ -15,6 +16,7 @@ export default function Index() {
         <CustomLink href="https://nextjs.authjs.dev">NextAuth.js</CustomLink>{" "}
         version: <em>next-auth@{packageJSON.dependencies["next-auth"]}</em>
       </p>
+      <IndexClient />
     </div>
   );
 }
