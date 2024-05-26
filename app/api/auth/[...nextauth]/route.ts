@@ -20,5 +20,6 @@ export const GET = (req: NextRequest) => {
 };
 
 export const POST = (req: NextRequest) => {
-  return handlers.POST(req);
+  const nextReq = reqWithBasePath(req);
+  return handlers.POST(nextReq);
 };
